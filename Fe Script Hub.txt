@@ -4,7 +4,7 @@ local Window = Rayfield:CreateWindow({
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Fe Script Hub",
    LoadingSubtitle = "by Sirius",
-   Theme = "Green", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -177,21 +177,21 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/presidentanvil/skyvr/
 
 
 local Button = Tab:CreateButton({
-   Name = "FE Telekenisis Script",
+   Name = "FE Hug Script",
    Callback = function()
       Rayfield:Notify({
-   Title = "Loading...",
-   Content = "Executing FE Telekenisis Script...",
-   Duration = 0.5,
+   Title = "Keybind",
+   Content = "Press H to Hug Player",
+   Duration = 3,
    Image = "rewind",
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/nil071n/fedora-admin/refs/heads/main/FE%20.txt"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/fe/refs/heads/main/FEHUGG"))()
    end,
 })
 
 
 
-local Tab = Window:CreateTab("Universal Scripts", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("GUI / Hubs", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "FE Orca GUI",
    Callback = function()
@@ -253,6 +253,40 @@ local Button = Tab:CreateButton({
 
 
 
+local Button = Tab:CreateButton({
+   Name = "Fake Logger Script",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Loading...",
+   Content = "Executing Fake Logger Script...",
+   Duration = 0.5,
+   Image = "rewind",
+})
+   loadstring(game:HttpGet("https://pastebin.com/raw/rpmS1eWX"))()
+   end,
+})
+
+
+
+local Button = Tab:CreateButton({
+   Name = "Draw in Chat GUI V2",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Loading...",
+   Content = "Executing Draw in Chat GUI V2...",
+   Duration = 0.5,
+   Image = "rewind",
+
+      Rayfield:Notify({
+   Title = "Keybind",
+   Content = "Press E After Loading Script to Open GUI",
+   Duration = 3,
+   Image = "rewind",
+})
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AKadminlol/Chatdraw/refs/heads/main/Chattdraw"))()
+   end,
+})
+
 
 
 
@@ -300,9 +334,6 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/QuorumHub1/TalentShowReupload/refs/heads/main/FuckYouGithub.lua"))()
    end,
 })
-
-
-
 
 
 
